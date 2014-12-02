@@ -16,39 +16,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="is it Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBU-Qp-Whk">
-                                <rect key="frame" x="207" y="62" width="186" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is it Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBU-Qp-Whk">
+                                <rect key="frame" x="207" y="75" width="186" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="6TH-dH-BIH"/>
+                                    <constraint firstAttribute="height" constant="49" id="6ei-x6-FqK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BH-33-J1t">
-                                <rect key="frame" x="252" y="206" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP0-R5-8SI">
-                                <rect key="frame" x="225" y="265" width="150" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGA-5t-KVR">
+                                <rect key="frame" x="155" y="317" width="290" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="1bG-ZN-mYG"/>
+                                    <constraint firstAttribute="height" constant="58" id="oQu-Ii-oUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP0-R5-8SI">
+                                <rect key="frame" x="225" y="267" width="150" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="pZH-Bv-dKs"/>
+                                    <constraint firstAttribute="width" constant="150" id="pp3-JV-mI8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Find out!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="do3-kO-6an"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter any positive number and find out if it is prime!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssr-uy-ayW">
-                                <rect key="frame" x="167" y="125" width="267" height="73"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter any positive number and find out if it is prime!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssr-uy-ayW">
+                                <rect key="frame" x="167" y="138" width="267" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="FeC-0I-M0v"/>
+                                    <constraint firstAttribute="width" constant="267" id="nON-mn-yJk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGA-5t-KVR">
-                                <rect key="frame" x="243" y="304" width="114" height="39"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BH-33-J1t">
+                                <rect key="frame" x="267" y="213" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="PYZ-eF-9dC"/>
+                                    <constraint firstAttribute="height" constant="30" id="kc9-Am-20t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.65589021381578949" green="1" blue="0.98591694078947367" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tBU-Qp-Whk" secondAttribute="centerX" id="Bie-zf-wya"/>
+                            <constraint firstItem="LP0-R5-8SI" firstAttribute="top" secondItem="8BH-33-J1t" secondAttribute="bottom" constant="24" id="Bny-5x-QsJ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ssr-uy-ayW" secondAttribute="centerX" id="H8N-bs-zCd"/>
+                            <constraint firstAttribute="centerX" secondItem="PGA-5t-KVR" secondAttribute="centerX" id="I80-sy-JoO"/>
+                            <constraint firstAttribute="centerX" secondItem="LP0-R5-8SI" secondAttribute="centerX" id="Lfu-T5-5vS"/>
+                            <constraint firstItem="8BH-33-J1t" firstAttribute="top" secondItem="Ssr-uy-ayW" secondAttribute="bottom" constant="2" id="a0h-N8-JFf"/>
+                            <constraint firstItem="tBU-Qp-Whk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="b5P-dc-oqY"/>
+                            <constraint firstItem="PGA-5t-KVR" firstAttribute="top" secondItem="LP0-R5-8SI" secondAttribute="bottom" constant="19" id="cbE-xv-f4o"/>
+                            <constraint firstAttribute="centerX" secondItem="8BH-33-J1t" secondAttribute="centerX" id="iUe-Pq-IWJ"/>
+                            <constraint firstItem="Ssr-uy-ayW" firstAttribute="top" secondItem="tBU-Qp-Whk" secondAttribute="bottom" constant="14" id="j5s-gm-iyv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="message" destination="PGA-5t-KVR" id="hVP-kb-Hz5"/>
+                        <outlet property="number" destination="8BH-33-J1t" id="Qz3-pI-y0E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
